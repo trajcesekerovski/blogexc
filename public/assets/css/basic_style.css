@@ -1,0 +1,26 @@
+body {
+    background-color:#e1eaea;
+}
+
+#quote {
+    color:lightblue;
+}
+
+.posts {
+    background-color: rgb(241, 237, 237);
+    padding-bottom: 25px;
+    margin: 10px;
+}
+
+.txtlink {
+    color: darkslategray;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: gray; 
+    border-color: darkgray;
+}
