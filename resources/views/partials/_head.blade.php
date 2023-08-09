@@ -9,4 +9,14 @@
     <link rel="stylesheet" href="{{ asset('assets/css/basic_style.css') }}">
     {{-- CKEditor CDN --}}
     <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   </head>

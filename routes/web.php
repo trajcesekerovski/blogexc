@@ -15,9 +15,12 @@ use App\Http\Controllers\PostsController;
 |
 */
 
-Route::get('/', [PagesController::class, 'getIndex']);
+// Route::get('/', [PagesController::class, 'getIndex']);
 
-Route::resource('posts', PostsController::class);
+Route::resource('posts', PostsController::class)->middleware('auth');
+
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
