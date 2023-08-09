@@ -22,7 +22,7 @@
                         <li class="list-group-item posts">
                             <a href="/posts/{{$post->id}}" class="txtlink">{{$post->title}}</a>
                             <p>{!!$post->body!!}</p>
-                            <small>Written on {{$post->created_at}}</small>
+                            <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
                         </li>
                     </div>
                 @endforeach
