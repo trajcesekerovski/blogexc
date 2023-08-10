@@ -18,7 +18,7 @@
                             <a class="nav-link" href="/posts/create">Create Post</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="api/v1/listposts/" target="_blank">All Posts API</a>
+                            <a class="nav-link" href="/api/v1/listposts/" target="_blank">All Posts API</a>
                         </li>
                     </ul>
                 @endauth
