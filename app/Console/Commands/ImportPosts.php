@@ -27,12 +27,11 @@ class ImportPosts extends Command
      */
     public function handle()
     {
-        $response = Http::get('https://www.risklick.ch/api/v2/blogs');
+        $response = Http::get('https://www.risklick.ch/api/v2/posts');
         // $posts = json_decode($response);
 
         foreach($response['data'] as $p)
         {
-            // var_dump($p);exit;
             $post = new Post;
             $post->title = $p['title'];
             $post->body = $p['short_body'];
