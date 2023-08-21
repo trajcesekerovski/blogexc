@@ -20,7 +20,7 @@ class ImportPosts extends Command
      *
      * @var string
      */
-    protected $description = 'Import posts from https://www.risklick.ch/api/v2/blogs';
+    protected $description = 'Import posts from https://www.risklick.ch/api/v2/posts';
 
     /**
      * Execute the console command.
@@ -28,7 +28,6 @@ class ImportPosts extends Command
     public function handle()
     {
         $response = Http::get('https://www.risklick.ch/api/v2/posts');
-        // $posts = json_decode($response);
 
         foreach($response['data'] as $p)
         {
